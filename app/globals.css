@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes gradientSweep {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animated-blue-bg {
+  background: linear-gradient(135deg, #020617 0%, #08284d 35%, #0f3f74 65%, #0c4e96 100%);
+  background-size: 300% 300%;
+  animation: gradientSweep 14s ease-in-out infinite;
+}
